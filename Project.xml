@@ -3,8 +3,8 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="HaxeFlixel Template" packageName="com.joalor64.template"
-		package="com.joalor64.template" file="Template" main="Main" version="1.0.0"
+	<app title="HaxeFlixel Template" packageName="com.joalor64.savefile"
+		package="com.joalor64.savefile" file="Template" main="Main" version="1.0.0"
 		company="Joalor64" />
 	<app preloader="flixel.system.FlxPreloader" />
 
