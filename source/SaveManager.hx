@@ -31,7 +31,14 @@ class SaveManager {
 
     public static function save(slot:Int, data:SaveFileData):Void {
         data.exists = true;
-        saves[slot].data = data;
+        var saveData = saves[slot].data;
+        if (saveData == null) {
+            saves[slot].data = {};
+        }
+        saves[slot].data.level = data.level;
+        saves[slot].data.score = data.score;
+        saves[slot].data.playTime = data.playTime;
+        saves[slot].data.exists = data.exists;
         saves[slot].flush();
     }
 
