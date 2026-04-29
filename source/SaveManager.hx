@@ -1,6 +1,6 @@
 package;
 
-import SaveFileData;
+import SaveData.SaveFileData;
 import flixel.util.FlxSave;
 
 class SaveManager {
