@@ -33,7 +33,8 @@ class SaveManager {
         data.exists = true;
         var saveData = saves[slot].data;
         if (saveData == null) {
-            saves[slot].data = {};
+            saveData = {};
+            saves[slot].data = saveData;
         }
         saves[slot].data.level = data.level;
         saves[slot].data.score = data.score;
